@@ -173,6 +173,9 @@ footer{
 }
 
 @media(max-width: 500px){
+    header nav{
+        font-size: 0.8em;
+    }
     #boxes .box{
         float: none;
         width: 100%;
@@ -183,5 +186,8 @@ footer{
     }
     #boxes .box p{
         margin-top: 0px;
+    }
+    header li{
+        padding: 0px 5px;
     }
 }
