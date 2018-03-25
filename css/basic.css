@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-color: #f4f4f4;
+    
+    font: 100%/1.5 normal Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    
+    list-style-type: none;
+}
+
+.button_01{
+    height: 38px;
+    background: #e8491d;
+    
+    border: none;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+
+header{
+    min-height: 70px;
+    
+    padding-top: 30px;
+    border-bottom: 3px solid #e8491d;
+    
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+header a{
+    color: #ffffff;
+    
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li{
+    float: left;
+    display: inline;
+    
+    padding: 0px 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 400px;
+    background: url('../images/show_01.jpg') no-repeat;
+    
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin: 90px 0 10px 0;
+    font-size: 2em;
+}
+
+#newslatter{
+    padding: 15px;
+    color: #ffffff;
+    
+    background: #35424a;
+}
+
+#newslatter h1{
+    float: left;
+}
+
+#newslatter form{
+    float: right;
+    
+    margin-top: 20px;
+}
+
+#newslatter input[type="email"]{
+    height: 30px;
+    width: 250px;
+    
+    border: 1px solid #000000;
+    padding: 4px;
+}
+
+#boxes{
+    margin: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+    height: auto;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    
+    color: #ffffff;
+    background: #e8491d;
+    
+    text-align: center;
+}
+
+/* Media Quaries */
+
+@media(max-width: 1000px){
+    #newslatter h1, #newslatter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    header #branding, header nav, header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #newslatter button{
+        display: block;
+        width: 100%;
+    }
+    #newslatter input[type="email"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 500px){
+    #boxes .box{
+        float: none;
+        width: 100%;
+    }
+    #boxes .box h3{
+        margin-bottom: 0px;
+        text-decoration: underline;
+    }
+    #boxes .box p{
+        margin-top: 0px;
+    }
+}
